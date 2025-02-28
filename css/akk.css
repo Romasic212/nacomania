@@ -1,0 +1,152 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Чтобы форма занимала большую часть экрана */
+    background-color: #fafafa
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    max-width: 90%; /* Для адаптивности на маленьких экранах */
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666666;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form-switch {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-switch:hover {
+    text-decoration: underline;
+}
+
+.welcome-message {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.welcome-message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.welcome-message a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none !important;
+}
+/* Добавьте эти стили для плавного отображения */
+.login-form,
+.register-form {
+    transition: opacity 0.3s ease;
+}
+
+
+#userProfile {
+    display: flex;
+    justify-content: flex-start; /* Align content to the start */
+    align-items: center;
+    gap: 10px;
+    margin-top: auto; /* Push the profile to the bottom */
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.user-profile-element {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style the user icon */
+
+.user-profile-element i.fa-user-circle {
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* Style Logout icon */
+.user-profile-element a {
+    color: #aaa;
+    /* So the Link text will be still vissible on  dark theme */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.user-profile-element a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.user-profile-element a i {
+    font-size: 1.2em;
+}
+
+
+
+
+

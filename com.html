@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Конспекты по математике.">
+    <title>Школьные конспекты - Математика</title>
+    <link rel="stylesheet" href="./css/predmet/math.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/predmet/tema.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./"><img src="./img/acetone-2025223-205340-77.png" alt="Логотип">Все конспекты</a>
+                <span class="site-description">Ваш помощник в учебе</span>
+            </div>
+            <button class="burger-menu">☰</button>
+
+            <div class="nav-items">
+                <a href="./index.html"><i class="fa fa-home"></i> Главная</a>
+                <a href="math.html"><i class="fa fa-calculator"></i> Математика</a>
+                <div id="userProfile"></div>
+            </div>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            
+        </nav>
+    </header>
+    <div class="home">
+    <h1>Комплексные числа</h1>
+    <p>Здесь вы найдете все необходимые конспекты по комплексным числам.</p>
+</div>
+
+<div class="home">
+    <h2>Разделы:</h2>
+</div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">1) Определение комплексного числа</div>
+    <div class="topic-content">
+        <p>Комплексное число — это число, которое может быть представлено в виде <code>z = a + bi</code>, где <code>a</code> и <code>b</code> — действительные числа, <code>i</code> — мнимая единица, удовлетворяющая условию
+            <code>i² = -1</code>. Здесь <code>a</code> называется действительной частью комплексного числа, а <code>b</code> — мнимой частью. Комплексные числа позволяют решать уравнения, которые не имеют решений в области действительных чисел, например, уравнение
+            <code>x² + 1 = 0</code>.</p>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">2) Алгебраическая форма записи комплексного числа</div>
+    <div class="topic-content">
+        <p>Алгебраическая форма записи комплексного числа выглядит как <code>z = a + bi</code>, где:</p>
+        <ul>
+            <li><p><code>a</code> — действительная часть,</p></li>
+            <li><p><code>b</code> — мнимая часть.</p></li>
+        </ul>
+        <p>Пример: <code>z₁ = 3 + 4i</code> (где <code>a = 3</code>, <code>b = 4</code>).</p>
+
+        <h3><p>Сопряженные комплексные числа:</p></h3>
+        <p>Сопряженное комплексное число к <code>z = a + bi</code> обозначается как <code>‾z</code> и равно <code>‾z = a - bi</code>.</p>
+        <p>Пример: Для <code>z = 3 + 4i</code>, сопряженное число будет <code>‾z = 3 - 4i</code>.</p>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">3) Действия с комплексными числами в алгебраической форме записи</div>
+    <div class="topic-content">
+        <ul>
+            <li><strong class="wite">Сложение:</strong><br>
+                <code>z₁ + z₂ = (a₁ + b₁ i) + (a₂ + b₂ i) = (a₁ + a₂) + (b₁ + b₂)i</code></li>
+            <li><strong>Вычитание:</strong><br>
+                <code>z₁ - z₂ = (a₁ + b₁ i) - (a₂ + b₂ i) = (a₁ - a₂) + (b₁ - b₂)i</code></li>
+            <li><strong>Умножение:</strong><br>
+                <code>z₁ ⋅ z₂ = (a₁ + b₁ i)(a₂ + b₂ i) = (a₁ a₂ - b₁ b₂) + (a₁ b₂ + a₂ b₁)i</code></li>
+            <li><strong>Деление:</strong><br>
+                <code>z₁ / z₂ = (a₁ + b₁ i) / (a₂ + b₂ i) ⋅ (a₂ - b₂ i) / (a₂ - b₂ i) = (a₁ a₂ + b₁ b₂) + (b₁ a₂ - a₁ b₂)i / a₂² + b₂²</code></li>
+        </ul>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">4) Модуль и аргумент комплексного числа</div>
+    <div class="topic-content">
+        <ul>
+            <li><strong>Модуль комплексного числа <code>z = a + bi</code> определяется как:</strong><br>
+                <code>|z| = √(a² + b²)</code></li>
+            <li><strong>Аргумент комплексного числа:</strong><br>
+                Аргумент комплексного числа — это угол <code>θ</code>, который образует вектор, соответствующий комплексному числу, с положительной осью абсцисс. Он может быть найден по формуле:<br>
+                <code>θ = tan⁻¹((b / a))</code></li>
+        </ul>
+        <p><strong>Геометрическое изображение:</strong> Комплексное число можно представить на комплексной плоскости (плоскости Оxy), где ось абсцисс соответствует действительной части, а ось ординат — мнимой части.</p>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">5) Натуральная степень числа i</div>
+    <div class="topic-content">
+        <ul>
+            <li><code>i⁰ = 1</code></li>
+            <li><code>i¹ = i</code></li>
+            <li><code>i² = -1</code></li>
+            <li><code>i³ = -i</code></li>
+            <li><code>i⁴ = 1</code></li>
+        </ul>
+        <p><strong>Периодичность:</strong> Степени числа <code>i</code> повторяются каждые 4: <code>iⁿ = i^(n (mod 4))</code>.</p>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">6) Решение квадратных уравнений с отрицательным дискриминантом</div>
+    <div class="topic-content">
+        <p>Квадратное уравнение имеет вид: <code>ax² + bx + c = 0</code></p>
+        <p>Дискриминант определяется как: <code>D = b² - 4ac</code></p>
+        <p>Если <code>D &lt; 0</code>, то уравнение имеет два комплексных корня:</p>
+        <code>x_(1,2) = -b ± √(D) / 2a = -b ± i√(-D) / 2a</code>
+
+        <h3>Пример:</h3>
+        <p>Решим уравнение <code>x² + 4x + 5 = 0</code>:</p>
+        <ul>
+            <li>Здесь <code>a = 1</code>, <code>b = 4</code>, <code>c = 5</code>.</li>
+            <li>Дискриминант: <code>D = 4² - 4*1*5 = 16 - 20 = -4 &lt; 0</code>.</li>
+            <li>Корни: <code>x_(1,2) = -4 ± i√(4) / 2 = -2 ± i</code>.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">7) Тригонометрическая форма записи комплексного числа</div>
+    <div class="topic-content">
+        <p>Тригонометрическая форма записи комплексного числа выглядит так: <code>z = r(cos(θ) + isin(θ))</code> где:</p>
+        <ul>
+            <li><code>r = |z| = √(a² + b²)</code> — модуль,</li>
+            <li><code>θ = arg(z) = tan⁻¹((b/a))</code> — аргумент.</li>
+        </ul>
+
+        <h3>Действия с комплексными числами в тригонометрической форме:</h3>
+        <ul>
+            <li><strong>Сложение:</strong> Необходимо преобразовать в алгебраическую форму.</li>
+            <li><strong>Умножение:</strong><br>
+                <code>z₁ z₂ = r₁ r₂ (cos(θ₁ + θ₂) + isin(θ₁ + θ₂))</code></li>
+            <li><strong>Деление:</strong><br>
+                <code>z₁ / z₂ = r₁ / r₂ (cos(θ₁ - θ₂) + isin(θ₁ - θ₂))</code></li>
+        </ul>
+    </div>
+</div>
+
+<div class="topic-block">
+    <div class="topic-header">8) Показательная форма записи комплексного числа</div>
+    <div class="topic-content">
+        <p>Показательная форма записи комплексного числа выражается как: <code>z = reⁱᶿ</code> где:</p>
+        <ul>
+            <li><code>r = |z|</code>,</li>
+            <li><code>θ = arg(z)</code>.</li>
+        </ul>
+
+        <h3>Действия в показательной форме:</h3>
+        <ul>
+            <li><strong>Сложение:</strong> Необходимо преобразовать в алгебраическую форму.</li>
+            <li><strong>Умножение:</strong><br>
+                <code>z₁ z₂ = r₁ r₂ e^(i(θ₁ + θ₂))</code></li>
+            <li><strong>Деление:</strong><br>
+                <code>z₁ / z₂ = r₁ / r₂ e^(i(θ₁ - θ₂))</code></li>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="auth-container hidden" id="auth_block">
+    <div class="auth-container">
+        <div class="form-container">
+            <div class="login-form" id="loginForm">
+                <h2>Вход</h2>
+                <form id="loginFormInner">
+                    <div class="form-group">
+                        <label for="usernameLogin">:</label>
+                        <input type="text" id="usernameLogin" name="usernameLogin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordLogin">:</label>
+                        <input type="password" id="passwordLogin" name="passwordLogin" required>
+                    </div>
+                    <button type="submit"></button>
+                    <p class="error-message" id="loginErrorMessage"></p>
+                </form>
+                <a href="#" class="form-switch" id="showRegisterForm"></a>
+            </div>
+
+            <div class="register-form hidden" id="registerForm">
+                <h2></h2>
+                <form id="registerFormInner">
+                    <div class="form-group">
+                        <label for="usernameRegister"></label>
+                        <input type="text" id="usernameRegister" name="usernameRegister" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordRegister"></label>
+                        <input type="password" id="passwordRegister" name="passwordRegister" required>
+                    </div>
+                    <button type="submit"></button>
+                    <p class="error-message" id="registerErrorMessage"></p>
+                </form>
+                <a href="#" class="form-switch" id="showLoginForm"></a>
+            </div>
+
+            <div class="welcome-message hidden" id="welcomeMessage">
+                <h2><span id="loggedInUsername"></span>!</h2>
+                <p><a href="./index.html"></a></p>
+                <button id="logoutButton"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="theme.js"></script>
+<script src="burger.js"></script>
+<script src="akk.js"></script>
+<script src="vidio.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const headers = document.querySelectorAll('.topic-header');
+  
+    headers.forEach((header, index) => {
+        const content = header.nextElementSibling;
+        const storageKey = `topic-${index}-collapsed`;
+  
+        // Check localStorage for collapsed state
+        const isCollapsed = localStorage.getItem(storageKey) === 'true';
+        if (isCollapsed) {
+            content.classList.add('hidden');
+            header.classList.add('collapsed');
+        }
+  
+        header.addEventListener('click', function() {
+            this.classList.toggle('collapsed');
+            content.classList.toggle('hidden');
+  
+            // Save collapsed state to localStorage
+            localStorage.setItem(storageKey, this.classList.contains('collapsed'));
+        });
+    });
+  });
+</script>
+
+
+</body>
+</html>

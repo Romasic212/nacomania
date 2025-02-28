@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Конспекты по математике - Тригонометрия.">
+    <title>Школьные конспекты - Тригонометрия</title>
+    <link rel="stylesheet" href="./css/predmet/math.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/predmet/tema.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./"><img src="./img/acetone-2025223-205340-77.png" alt="Логотип">Все конспекты</a>
+                <span class="site-description">Ваш помощник в учебе</span>
+            </div>
+            <button class="burger-menu">☰</button>
+
+            <div class="nav-items">
+                <a href="./index.html"><i class="fa fa-home"></i> Главная</a>
+                <a href="math.html"><i class="fa fa-calculator"></i> Математика</a>
+                <div id="userProfile"></div>
+            </div>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="home">
+        <h1>Тригонометрия</h1>
+        <p>Здесь вы найдете все необходимые конспекты по тригонометрии.</p>
+    </div>
+
+    <div class="home">
+        <h2>Разделы:</h2>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">1) Основные понятия тригонометрии</div>
+        <div class="topic-content">
+            <p>Тригонометрия изучает соотношения между сторонами и углами треугольников, а также тригонометрические функции (синус, косинус, тангенс, котангенс) и их свойства.</p>
+            <ul>
+                <li><strong>Угол:</strong> Величина поворота. Измеряется в градусах или радианах.</li>
+                <li><strong>Радиан:</strong> Угол, при котором длина дуги окружности равна радиусу окружности. 1 радиан ≈ 57.3 градуса.</li>
+                <li><strong>Треугольник:</strong> Геометрическая фигура с тремя сторонами и тремя углами.</li>
+                <li><strong>Прямоугольный треугольник:</strong> Треугольник, один из углов которого равен 90 градусам.</li>
+                <li><strong>Гипотенуза:</strong> Сторона прямоугольного треугольника, лежащая напротив прямого угла.</li>
+                <li><strong>Катеты:</strong> Две стороны прямоугольного треугольника, прилежащие к прямому углу.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">2) Тригонометрические функции острого угла</div>
+        <div class="topic-content">
+            <p>Для острого угла &alpha; в прямоугольном треугольнике:</p>
+            <ul>
+                <li><strong>Синус (sin &alpha;):</strong> Отношение противолежащего катета к гипотенузе.  <code>sin &alpha; = (противолежащий катет) / (гипотенуза)</code></li>
+                <li><strong>Косинус (cos &alpha;):</strong> Отношение прилежащего катета к гипотенузе. <code>cos &alpha; = (прилежащий катет) / (гипотенуза)</code></li>
+                <li><strong>Тангенс (tan &alpha;):</strong> Отношение противолежащего катета к прилежащему.  <code>tan &alpha; = (противолежащий катет) / (прилежащий катет) = sin &alpha; / cos &alpha;</code></li>
+                <li><strong>Котангенс (cot &alpha;):</strong> Отношение прилежащего катета к противолежащему. <code>cot &alpha; = (прилежащий катет) / (противолежащий катет) = cos &alpha; / sin &alpha; = 1 / tan &alpha;</code></li>
+            </ul>
+            <p><strong>Важные значения:</strong> sin 30° = 1/2, cos 60° = 1/2, tan 45° = 1, и т.д.</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">3) Тригонометрические функции произвольного угла</div>
+        <div class="topic-content">
+            <p>Тригонометрические функции определяются для углов от 0° до 360° (или от 0 до 2π радиан) и далее, с использованием единичной окружности:</p>
+            <ul>
+                <li><strong>Единичная окружность:</strong> Окружность с радиусом 1, центр которой находится в начале координат.</li>
+                <li><strong>sin &alpha;:</strong> Ордината точки на единичной окружности, соответствующей углу &alpha;.</li>
+                <li><strong>cos &alpha;:</strong> Абсцисса точки на единичной окружности, соответствующей углу &alpha;.</li>
+                <li><strong>tan &alpha;:</strong> sin &alpha; / cos &alpha; (определена для всех &alpha;, кроме cos &alpha; = 0, т.е. для углов, кратных 90°).</li>
+                <li><strong>cot &alpha;:</strong> cos &alpha; / sin &alpha; (определена для всех &alpha;, кроме sin &alpha; = 0, т.е. для углов, кратных 180°).</li>
+            </ul>
+            <p><strong>Четверти:</strong>  Определяют знаки тригонометрических функций в каждой четверти единичной окружности (I, II, III, IV).</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">4) Основные тригонометрические тождества</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong>Основное тригонометрическое тождество:</strong> <code>sin² &alpha; + cos² &alpha; = 1</code></li>
+                <li><code>1 + tan² &alpha; = 1 / cos² &alpha;</code></li>
+                <li><code>1 + cot² &alpha; = 1 / sin² &alpha;</code></li>
+                <li><strong>Формулы приведения:</strong>  Определяют, как выразить тригонометрические функции углов, отличающихся от &alpha; на кратные 90° (π/2). Например:
+                    <ul>
+                        <li><code>sin(90° - &alpha;) = cos &alpha;</code></li>
+                        <li><code>cos(90° - &alpha;) = sin &alpha;</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">5) Тригонометрические функции суммы и разности углов</div>
+        <div class="topic-content">
+            <ul>
+                <li><code>sin(&alpha; + &beta;) = sin &alpha; cos &beta; + cos &alpha; sin &beta;</code></li>
+                <li><code>sin(&alpha; - &beta;) = sin &alpha; cos &beta; - cos &alpha; sin &beta;</code></li>
+                <li><code>cos(&alpha; + &beta;) = cos &alpha; cos &beta; - sin &alpha; sin &beta;</code></li>
+                <li><code>cos(&alpha; - &beta;) = cos &alpha; cos &beta; + sin &alpha; sin &beta;</code></li>
+                <li><code>tan(&alpha; + &beta;) = (tan &alpha; + tan &beta;) / (1 - tan &alpha; tan &beta;)</code></li>
+                <li><code>tan(&alpha; - &beta;) = (tan &alpha; - tan &beta;) / (1 + tan &alpha; tan &beta;)</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">6) Тригонометрические функции двойного и тройного угла</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong>Двойной угол:</strong>
+                    <ul>
+                        <li><code>sin 2&alpha; = 2 sin &alpha; cos &alpha;</code></li>
+                        <li><code>cos 2&alpha; = cos² &alpha; - sin² &alpha; = 2cos² &alpha; - 1 = 1 - 2sin² &alpha;</code></li>
+                        <li><code>tan 2&alpha; = (2 tan &alpha;) / (1 - tan² &alpha;)</code></li>
+                    </ul>
+                </li>
+                <li><strong>Тройной угол:</strong>
+                    <ul>
+                        <li><code>sin 3&alpha; = 3sin &alpha; - 4sin³ &alpha;</code></li>
+                        <li><code>cos 3&alpha; = 4cos³ &alpha; - 3cos &alpha;</code></li>
+                        <li><code>tan 3&alpha; = (3tan &alpha; - tan³ &alpha;) / (1 - 3tan² &alpha;)</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">7) Преобразование суммы тригонометрических функций в произведение</div>
+        <div class="topic-content">
+            <ul>
+                <li><code>sin &alpha; + sin &beta; = 2 sin((&alpha; + &beta;) / 2) cos((&alpha; - &beta;) / 2)</code></li>
+                <li><code>sin &alpha; - sin &beta; = 2 cos((&alpha; + &beta;) / 2) sin((&alpha; - &beta;) / 2)</code></li>
+                <li><code>cos &alpha; + cos &beta; = 2 cos((&alpha; + &beta;) / 2) cos((&alpha; - &beta;) / 2)</code></li>
+                <li><code>cos &alpha; - cos &beta; = -2 sin((&alpha; + &beta;) / 2) sin((&alpha; - &beta;) / 2)</code></li>
+                <li><code>tan &alpha; + tan &beta; = sin(&alpha; + &beta;) / (cos &alpha; cos &beta;)</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">8) Решение треугольников</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong>Теорема синусов:</strong>  <code>a / sin A = b / sin B = c / sin C</code> (где a, b, c - стороны треугольника, A, B, C - противолежащие им углы).</li>
+                <li><strong>Теорема косинусов:</strong> <code>c² = a² + b² - 2ab cos C</code></li>
+                <li><strong>Решение треугольника:</strong> Нахождение всех сторон и углов треугольника, если известны некоторые из них (например, две стороны и угол между ними, или три стороны).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">9) Обратные тригонометрические функции</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong>Арксинус (arcsin x):</strong>  Функция, обратная к синусу.  arcsin x = y, если sin y = x.  Область значений: [-π/2, π/2].</li>
+                <li><strong>Арккосинус (arccos x):</strong> Функция, обратная к косинусу. arccos x = y, если cos y = x. Область значений: [0, π].</li>
+                <li><strong>Артангенс (arctan x):</strong> Функция, обратная к тангенсу. arctan x = y, если tan y = x. Область значений: (-π/2, π/2).</li>
+                <li><strong>Арккотангенс (arccot x):</strong> Функция, обратная к котангенсу. arccot x = y, если cot y = x. Область значений: (0, π).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">10) Решение тригонометрических уравнений</div>
+        <div class="topic-content">
+            <p>Тригонометрические уравнения содержат тригонометрические функции. Решение таких уравнений часто включает в себя использование тригонометрических тождеств, формул приведения и знания областей значений и периодов тригонометрических функций.</p>
+            <p>Примеры простейших уравнений:</p>
+            <ul>
+                <li><code>sin x = a</code>  Решения:  <code>x = (-1)^k arcsin a + πk</code>,  где k - целое число.</li>
+                <li><code>cos x = a</code>  Решения:  <code>x = ± arccos a + 2πk</code>,  где k - целое число.</li>
+                <li><code>tan x = a</code>  Решения:  <code>x = arctan a + πk</code>,  где k - целое число.</li>
+                <li><code>cot x = a</code>  Решения:  <code>x = arccot a + πk</code>,  где k - целое число.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="auth-container hidden" id="auth_block">
+        <div class="auth-container">
+            <div class="form-container">
+                <div class="login-form" id="loginForm">
+                    <h2>Вход</h2>
+                    <form id="loginFormInner">
+                        <div class="form-group">
+                            <label for="usernameLogin">:</label>
+                            <input type="text" id="usernameLogin" name="usernameLogin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogin">:</label>
+                            <input type="password" id="passwordLogin" name="passwordLogin" required>
+                        </div>
+                        <button type="submit"></button>
+                        <p class="error-message" id="loginErrorMessage"></p>
+                    </form>
+                    <a href="#" class="form-switch" id="showRegisterForm"></a>
+                </div>
+    
+                <div class="register-form hidden" id="registerForm">
+                    <h2></h2>
+                    <form id="registerFormInner">
+                        <div class="form-group">
+                            <label for="usernameRegister"></label>
+                            <input type="text" id="usernameRegister" name="usernameRegister" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRegister"></label>
+                            <input type="password" id="passwordRegister" name="passwordRegister" required>
+                        </div>
+                        <button type="submit"></button>
+                        <p class="error-message" id="registerErrorMessage"></p>
+                    </form>
+                    <a href="#" class="form-switch" id="showLoginForm"></a>
+                </div>
+    
+                <div class="welcome-message hidden" id="welcomeMessage">
+                    <h2><span id="loggedInUsername"></span>!</h2>
+                    <p><a href="./index.html"></a></p>
+                    <button id="logoutButton"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script src="burger.js"></script>
+    <script src="akk.js"></script>
+    <script src="vidio.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const headers = document.querySelectorAll('.topic-header');
+          
+            headers.forEach((header, index) => {
+                const content = header.nextElementSibling;
+                const storageKey = `topic-${index}-collapsed`;
+          
+                // Check localStorage for collapsed state
+                const isCollapsed = localStorage.getItem(storageKey) === 'true';
+                if (isCollapsed) {
+                    content.classList.add('hidden');
+                    header.classList.add('collapsed');
+                }
+          
+                header.addEventListener('click', function() {
+                    this.classList.toggle('collapsed');
+                    content.classList.toggle('hidden');
+          
+                    // Save collapsed state to localStorage
+                    localStorage.setItem(storageKey, this.classList.contains('collapsed'));
+                });
+            });
+          });
+        </script>
+</body>
+</html>

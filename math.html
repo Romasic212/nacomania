@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Конспекты по математике.">
+    <title>Конспекты - Математика</title>
+    <link rel="stylesheet" href="./css/predmet/math.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./"><img src="./img/acetone-2025223-205340-77.png" alt="Логотип">Все конспекты</a>
+                <span class="site-description">Ваш помощник в учебе</span>
+            </div>
+            <button class="burger-menu">☰</button>
+
+            <div class="nav-items">
+                <a href="./index.html"><i class="fa fa-home"></i> Главная</a>
+                <a href="./com.html"><i class="fa fa-superscript"></i> Комплексные числа </a>
+                <a href="informatics.html"><i class="fa fa-ruler-combined"></i> Геометрия</a>
+                <a href="./trig.html"><i class="fa fa-wave-square"></i> Тригонометрия</a>
+                <div id="userProfile"></div>
+            </div>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+            <h1>Математика</h1>
+            <p>Здесь вы найдете все необходимые конспекты по математике.</p>
+        </div>
+
+        <div class="home">
+            <h2>Разделы:</h2>
+        </div>
+
+        <div class="subjects-grid">
+
+            <a href="./com.html" class="subject-card">
+                <div class="subject-header">
+                    <img src="./img/komplexn.webp" alt="Алгебра">
+                </div>
+                <div class="subject-color-bar" style="background-color: #2980b9;"></div>
+                <div class="subject-body">
+                    <i class="fa fa-superscript"></i>
+                    <h3>Комплексные числа</h3>
+                    <p>Уравнения, неравенства, функции и многое другое.</p>
+                    <div class="progress-circle">
+                        <span>75%</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="subject-card">
+                <div class="subject-header">
+                    <img src="./img/geometria.jpg" alt="Геометрия">
+                </div>
+                <div class="subject-color-bar" style="background-color: #27ae60;"></div>
+                <div class="subject-body">
+                    <i class="fa fa-ruler-combined"></i>
+                    <h3>Геометрия</h3>
+                    <p>Фигуры, теоремы, объемы и площади.</p>
+                    <div class="progress-circle">
+                        <span>60%</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./trig.html" class="subject-card">
+                <div class="subject-header">
+                    <img src="./img/trigonometria..webp" alt="Тригонометрия">
+                </div>
+                <div class="subject-color-bar" style="background-color: #f39c12;"></div>
+                <div class="subject-body">
+                    <i class="fa fa-wave-square"></i>
+                    <h3>Тригонометрия</h3>
+                    <p>Синусы, косинусы, тангенсы и котангенсы.</p>
+                    <div class="progress-circle">
+                        <span>40%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="./pred.html" class="subject-card">
+                <div class="subject-header">
+                    <img src="./img/predel.webp" alt="Пределы">
+                </div>
+                <div class="subject-color-bar" style="background-color: #f39c12;"></div>
+                <div class="subject-body">
+                    <i class="fa fa-wave-square"></i>
+                    <h3>Пределы</h3>
+                    <p>Бесконечность не предел</p>
+                    <div class="progress-circle">
+                        <span>40%</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Все конспекты</p>
+        <p>Сейчас конспектов нету, работаю над визуалом</p>
+    </footer>
+    <div class="auth-container hidden" id="auth_block">
+        <div class="auth-container">
+            <div class="form-container">
+                <div class="login-form" id="loginForm">
+                    <h2>Вход</h2>
+                    <form id="loginFormInner">
+                        <div class="form-group">
+                            <label for="usernameLogin">:</label>
+                            <input type="text" id="usernameLogin" name="usernameLogin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogin">:</label>
+                            <input type="password" id="passwordLogin" name="passwordLogin" required>
+                        </div>
+                        <button type="submit"></button>
+                        <p class="error-message" id="loginErrorMessage"></p>
+                    </form>
+                    <a href="#" class="form-switch" id="showRegisterForm"></a>
+                </div>
+    
+                <div class="register-form hidden" id="registerForm">
+                    <h2></h2>
+                    <form id="registerFormInner">
+                        <div class="form-group">
+                            <label for="usernameRegister"></label>
+                            <input type="text" id="usernameRegister" name="usernameRegister" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRegister"></label>
+                            <input type="password" id="passwordRegister" name="passwordRegister" required>
+                        </div>
+                        <button type="submit"></button>
+                        <p class="error-message" id="registerErrorMessage"></p>
+                    </form>
+                    <a href="#" class="form-switch" id="showLoginForm"></a>
+                </div>
+    
+                <div class="welcome-message hidden" id="welcomeMessage">
+                    <h2><span id="loggedInUsername"></span>!</h2>
+                    <p><a href="./index.html"></a></p>
+                    <button id="logoutButton"></button>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script src="burger.js"></script>
+    <script src="akk.js"></script>
+    <script src="vidio.js"></script>
+</body>
+
+</html>

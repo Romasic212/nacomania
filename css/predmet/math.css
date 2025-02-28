@@ -1,0 +1,160 @@
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3
+ {
+    color: #fff;
+}
+.dark-mode p{
+    color: #bdbdbd;
+}
+.dark-mode .logo a{
+    color: #fff;
+}
+.subject-body .fa-superscript{
+    color: #2980b9;
+}
+.subject-body .fa-ruler-combined{
+    color: #27ae60;
+}
+.subject-body .fa-wave-square{
+    color: #f39c12;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333; /* Темный основной текст */
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.home {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home h1 {
+    font-size: 2.8em;
+    color: #2e60cc; /* Синий акцент для заголовка */
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Оформление блоков с темами */
+.topic-block {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden; /* Чтобы borderRadius работал правильно */
+    transition: box-shadow 0.3s ease;
+}
+
+.topic-block:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header {
+    background-color: #f0f4ff; /* Очень светлый оттенок синего */
+    color: #2e60cc;
+    padding: 15px 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer; /* Показываем, что заголовок кликабельный */
+    transition: background-color 0.3s ease;
+}
+
+.topic-header:hover {
+    background-color: #d9e2f7; /* Более насыщенный светлый синий при наведении */
+}
+
+.topic-content {
+    padding: 20px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.topic-content p {
+    margin-bottom: 15px;
+}
+
+.topic-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.topic-content li {
+    margin-bottom: 8px;
+}
+
+.topic-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #f2f2f2;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+/* Стили для списков внутри блоков */
+.topic-content ul {
+    list-style-type: disc; /* Маркеры для списков */
+    margin-left: 20px;
+}
+
+.topic-content ul li {
+    margin-bottom: 8px;
+}
+.topic-block {
+    margin-bottom: 15px; /* Add some space between blocks */
+    border-radius: 5px;
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.topic-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    cursor: pointer; /* Indicates it's clickable */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Vertically align items */
+}
+
+.topic-content {
+    padding: 10px;
+    display: block; /* Initially show content */
+}
+
+.topic-header::after {
+    content: '\25BC'; /* Unicode character for a downward-pointing triangle */
+    font-size: 10px;
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+.topic-content.hidden {
+    display: none;
+}
+
+.topic-header.collapsed::after {
+    transform: rotate(90deg); /* Rotate the triangle when collapsed */
+}
+.nav-items{
+    display: note;
+}
